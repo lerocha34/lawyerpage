@@ -41,6 +41,11 @@ header{
 .menu-desktop-area{
     display:none;
 }
+.menu-desktop-area a,
+.menu-mobile a{
+    text-decoration: none;
+    color:inherit;
+}
 
 .menu-mobile-area{
     display:flex;
