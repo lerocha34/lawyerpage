@@ -190,3 +190,115 @@ footer{
     color:#fff;
     font-size:10px;
 }
+
+
+@media (min-width:768px){
+    .main-area{
+        width:50vw;
+    }
+
+    .menu-mobile-area{
+        display:none;
+    }
+
+    .menu-desktop-area{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        background-color:rgb(72, 161, 175);
+        margin:0;
+    }
+    .menu-desktop-area ul{
+        list-style: none;
+        display:flex;
+        margin-left:-30px;
+        
+    }
+    .menu-desktop-area ul li{
+        padding:5px;
+        border-bottom:1px solid #ccc;
+        margin:3px;
+        font-weight:700;
+        color:#fff;
+        text-shadow: 1px 1px 4px #000;
+        text-transform: uppercase;
+        text-align:center;
+        cursor:pointer;
+        
+    }
+    
+
+    .menu-desktop-area .search-area{
+        display:flex;
+    }
+
+    .menu-desktop-area .search-area input{
+        border:1px solid #fff;
+        border-right:none;
+    }
+    .menu-desktop-area .search-area img{
+        border:1px solid #fff;
+
+    }
+}
+
+@media (min-width:1024px){
+    .menu-desktop-area .search-area input{
+        width:250px;
+        height:30px;
+    }
+
+    .menu-desktop-area .search-area img{
+        width:25px;
+    }
+
+    .menu-desktop-area ul{
+        margin-left:0;
+        font-size:20px;
+    }
+
+    .menu-desktop-area ul li:hover{
+        border-bottom:1px solid #444;
+    }
+
+    .container{
+        background-size:center;
+        height:500px;
+    }
+
+    .container .text-area{
+        width:55vw;
+        height:25vh;
+        margin:1px;
+        background-color:transparent;
+        align-self:center;
+    }
+
+    .container .text-area h1{
+        background-color:var(--fundo);
+        width:fit-content;
+        padding-right:30px;
+        padding-left:30px;
+        color:#fff;
+        font-size:25px;
+        text-shadow: 1px 1px 4px #000;
+    }
+
+    .container .text-area span{
+        background-color:var(--fundo);
+        width:fit-content;
+        padding-right:30px;
+        padding-left:30px;
+        color:#fff;
+        font-size:20px;
+        text-shadow: 1px 1px 4px #000;
+    }
+
+    .testemony{
+        flex-direction:row;
+    }
+
+    .search-area img{
+        cursor:pointer;
+    }
+}

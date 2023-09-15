@@ -194,6 +194,12 @@ main{
     margin-top:50px;
 }
 
+footer{
+    background-color:#000;
+    color:#fff;
+    font-size:10px;
+}
+
 @media (min-width:768px){
     .main-area{
         width:50vw;
@@ -265,4 +271,8 @@ main{
     .main-area h3{
         font-size:14px;
     }
+
+    .search-area img{
+        cursor:pointer;
+    };
 }
