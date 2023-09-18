@@ -1,0 +1,274 @@
+:root{
+    --fundo: rgba(72, 161, 175, 0.6);
+}
+
+*{
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+body,
+html{
+    width:100%;
+    margin:0;
+}
+
+header{
+    display:flex;
+}
+.logo-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo{
+    width:80px;
+    height:fit-content
+}
+
+.logo-title{
+    margin-left:10px;
+}
+
+.logo-title h1{
+    font-family:'Courier New', Courier, monospace
+}
+.logo-title h3{
+    margin-top:-20px;
+    font-weight: 300;
+    font-size:small;
+    text-transform:capitalize;
+    color:#777;
+}
+.social-media-area-desktop,
+.menu-desktop-area{
+    display:none;
+}
+.menu-desktop-area a,
+.menu-mobile a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.menu-mobile-area{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+.menu-mobile-button{
+    width:30px;
+    height:30px;
+    background-color:rgb(72 161 175);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    border-radius:5px;
+    margin-top:20px;
+    padding:3px;
+    align-self:center;
+   
+}
+
+.menu-mobile-button div{
+    width:75%;
+    height:5px;
+    border-radius:3px;
+    background-color: #fff;
+}
+
+.menu-mobile-area .search-area{
+    display:flex;
+
+}
+.menu-mobile-area .search-area input{
+    padding:0;
+    border:1px solid #aaa;
+    border-right:none;
+}
+
+.menu-mobile-area img{
+    background-color:rgb(72 161 175);
+    margin:0;
+    width:25px;
+    border:1px solid #aaa;
+    border-left:none;
+}
+
+.menu-mobile{
+    display:flex;
+    justify-content:space-between;
+    background-color:rgb(72 161 175);
+    width:fit-content;
+    padding:10px;
+    position:absolute;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display:none;
+    
+}
+
+.menu-mobile ul{
+    list-style: none;
+    padding:0;
+}
+.menu-mobile ul li{
+    margin:10px;
+    color:#fff;
+    font-weight: 700;
+    margin-left:0;
+    margin-right:0;
+    padding-bottom:4px;
+    border-bottom:1px solid #fff;
+}
+.menu-mobile .close-menu{
+    color:#fff;
+    font-size:18px;
+    width:fit-content;
+    height:fit-content;
+    padding:10px;
+    
+}
+
+
+main{
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+
+.mobile{
+    background-image: url("../images/about.jpg");
+    background-size:cover;
+    margin-top:30px
+}
+.mobile .text-area{
+    margin:30px;
+    text-align:center;
+    background-color: var(--fundo);
+    color:#fff;
+    text-shadow: 1px 1px 4px #000;
+}
+
+.mobile .title{
+    text-transform:uppercase;
+    font-size:30px;
+    margin-bottom:10px;
+
+}
+
+.desktop{
+    display:none;
+}
+
+.desktop  img{
+    width:20vw;
+    
+}
+
+.desktop .text-area{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color:var(--fundo);
+}
+.desktop .text-area .title{
+    font-size:30px;
+    font-weight:700;
+    text-transform:uppercase;
+    align-self:center;
+    margin-bottom:40px;
+}
+
+.desktop .text-area span{
+    font-size:20px;
+    text-indent: 20px;;
+}
+
+
+footer{
+    background-color:#000;
+    color:#fff;
+    font-size:10px;
+}
+
+
+@media (min-width:768px){
+    .main-area{
+        width:50vw;
+    }
+
+    .menu-mobile-area{
+        display:none;
+    }
+
+    .menu-desktop-area{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        background-color:rgb(72, 161, 175);
+        margin:0;
+    }
+    .menu-desktop-area ul{
+        list-style: none;
+        display:flex;
+        margin-left:-30px;
+        
+    }
+    .menu-desktop-area ul li{
+        padding:5px;
+        border-bottom:1px solid #ccc;
+        margin:3px;
+        font-weight:700;
+        color:#fff;
+        text-shadow: 1px 1px 4px #000;
+        text-transform: uppercase;
+        text-align:center;
+        cursor:pointer;
+        
+    }
+    
+
+    .menu-desktop-area .search-area{
+        display:flex;
+    }
+
+    .menu-desktop-area .search-area input{
+        border:1px solid #fff;
+        border-right:none;
+    }
+    .menu-desktop-area .search-area img{
+        border:1px solid #fff;
+
+    }
+
+    .mobile{
+        display:none;
+    }
+
+    .desktop{
+        display:flex;
+    }
+}
+
+@media (min-width:1024px){
+    .menu-desktop-area .search-area input{
+        width:250px;
+        height:30px;
+    }
+
+    .menu-desktop-area .search-area img{
+        width:25px;
+    }
+
+    .menu-desktop-area ul{
+        margin-left:0;
+        font-size:20px;
+    }
+
+    .menu-desktop-area ul li:hover{
+        border-bottom:1px solid #444;
+    }
+}
