@@ -148,7 +148,7 @@ main{
     text-align:center;
     background-color: var(--fundo);
     color:#fff;
-    text-shadow: 1px 1px 4px #000;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .mobile .title{
@@ -250,6 +250,16 @@ footer{
 
     .desktop{
         display:flex;
+    }
+
+    .desktop .text-area .title{
+        color:#fff;
+        text-shadow: 1px 1px 4px #000;
+    }
+
+    .desktop .text-area span{
+        color:#000;
+        font-weight: 700;
     }
 }
 

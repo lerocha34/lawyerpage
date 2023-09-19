@@ -235,10 +235,11 @@ footer{
     }
 
     .area{
-        width:40%;
+        width:fit-content;
     }
     .area img{
         width:25vw;
+        border:none;
     }
 }
 

@@ -143,6 +143,8 @@ header{
     background-color:var(--fundo);
     width:90%;
     margin:auto;
+    color:#fff;
+    text-shadow: 1px 1px 1px #000;
     
 }
 .text-area h1{
@@ -240,6 +242,8 @@ footer{
         border:1px solid #fff;
 
     }
+
+
 }
 
 @media (min-width:1024px){
