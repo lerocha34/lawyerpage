@@ -17,7 +17,7 @@ document.querySelector('.close-menu').addEventListener('click', () => {
     menu.style.display = 'none';
 });
 
-document.querySelector('.submit').addEventListener('click',()=>{
+/*document.querySelector('.submit').addEventListener('click',()=>{
     let name = document.querySelector('.main-area .name');
     let email = document.querySelector('.main-area .email');
     let phone = document.querySelector('.main-area .phone');
@@ -29,4 +29,6 @@ document.querySelector('.submit').addEventListener('click',()=>{
     message.value = '';
 
     alert('Sua mensagem foi enviada');
-})
+})*/
+
+
